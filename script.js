@@ -53,7 +53,7 @@ response.then((data)=>data.json())
 
             let weatherapi = fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=533856a33d6e9556d6e0814e4164b010`)
             weatherapi.then((data1)=>data1.json())
-            .then((result1)=>{ console.log(result1)
+            .then((result1)=>{ 
                 alert (`Weather of ${result[index].name.common}: Temperature is ${Math.floor(result1.main.temp)}° but Feels like ${result1.main.feels_like}°,  Wind speed: ${result1.wind.speed} mph, Humidity: ${result1.main.humidity} g/m3 and Pressure: ${result1.main.pressure} mb  `)
             })           
         })
